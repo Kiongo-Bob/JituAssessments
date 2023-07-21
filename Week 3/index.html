@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Management System</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+            <div class="names">
+                <label class="mandatory" for="name">Enter two names: </label>
+                <input id="fname" class="input" type="text" required><br>
+            </div>
+            <div class="e-mail">
+                <label class="optional" for="email">Enter your email: </label>
+                <input id="email" class="input" type="text">
+            </div>
+            <div class="number">
+                <label class="mandatory" for="tel">Enter your phone number: </label>
+                <input id="tel-no" class="input" type="number" placeholder="Enter with country code" required>
+            </div>
+            <div class="buttons">
+                <button onclick="save()">SAVE</button>
+                <button onclick="update()">UPDATE</button>
+                <button onclick="del()">DELETE</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

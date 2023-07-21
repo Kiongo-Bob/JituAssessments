@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+.container{
+    display: flex;
+    /* align-items: center; */
+    background-color: rgb(198, 201, 235);
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px;
+    justify-content: space-evenly;
+    border-radius: 5px;
+}
+.saved-contacts{
+    background-color: aquamarine;
+    display: flex;
+}
