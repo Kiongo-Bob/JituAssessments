@@ -1,0 +1,5 @@
+CREATE OR ALTER PROCEDURE deleteNote (@id VARCHAR(10))
+AS
+BEGIN 
+    DELETE FROM notesTable WHERE id=@id
+END
