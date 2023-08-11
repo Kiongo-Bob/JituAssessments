@@ -14,9 +14,3 @@ describe("It should not be clickable", ()=>{
         cy.get('#submit').should('not.be.disabled');
       });
     });
-  
-    
-    
-    
-    
-    
