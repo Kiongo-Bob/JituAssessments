@@ -1,16 +1,16 @@
-const mssql = require('mssql');
-const dotenv = require('dotenv');
+import mssql from 'mssql';
+import dotenv from 'dotenv';
 dotenv.config();
 
 const pool = new mssql.ConnectionPool({
 	user: process.env.DB_USER,
 	password: process.env.DB_PWD,
 	database: process.env.DB_NAME,
-	server: process.env.SERVER_NAME,
+	server: ' ',
 	pool: {
 		max: 10,
 		min: 0,
-		idleTimeoutMillis: 30000,
+		idleTimeoutMillis: 20000,
 	},
 	options: {
 		encrypt: false,
@@ -19,7 +19,7 @@ const pool = new mssql.ConnectionPool({
 });
 
 const connectToPool = async () => {
-	try {
+	try {cd
 		await pool.connect();
 		console.log('connected to db...');
 	} catch (error) {
@@ -27,4 +27,4 @@ const connectToPool = async () => {
 	}
 };
 
-module.exports = { connectToPool, pool };
+export { connectToPool, pool };
