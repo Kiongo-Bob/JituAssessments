@@ -1,7 +1,7 @@
 const validateUserRegistration = (req, res, next) => {
     const {Email} = req.body
 
-    if (!Email ||) {
+    if (!Email) {
         return res.status(400).json({
             message: "Ensure all fields are filled"
         })
