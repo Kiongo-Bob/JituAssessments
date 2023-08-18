@@ -1,0 +1,10 @@
+CREATE OR ALTER PROCEDURE GetStdByRegNo
+@regNo NVARCHAR(255)
+AS
+BEGIN
+    SELECT *
+    FROM Students
+    WHERE regNo = @regNo;
+END
+
+SELECT * FROM Students

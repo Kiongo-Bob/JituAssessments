@@ -1,0 +1,5 @@
+CREATE OR ALTER PROCEDURE getAllStdsProc
+AS
+BEGIN SELECT * FROM Students
+END;
+
