@@ -15,10 +15,10 @@ describe('Student table test suite', ()=>{
         expect(res.statusCode).toBe(200)
         expect(res.body.todo).toEqual(
             expect.objectContaining({
-                userId: expect.any(Number),
-                title: expect.any(String),
-                completed: expect.any(Boolean),
-                id: expect.any(Number)
+                regNo: expect.any(string),
+                stdName: expect.any(String),
+                stream: expect.any(string),
+                feelBal: expect.any(Number)
             })
         ) 
     })
